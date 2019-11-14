@@ -1,5 +1,4 @@
 const suits = ['hearts', 'spades', 'diamonds', 'clubs'];
-const ranks = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13'];
 const cardsWrapper = document.querySelector('.cards-wrapper');
 
 
@@ -20,19 +19,6 @@ function createCards() {
 
 });
 
- Array.prototype.shuffle = function() {
-  let input = this;
-  
-  for (let i = input.length-1; i >=0; i--) {
-  
-    let randomIndex = Math.floor(Math.random()*(i+1)); 
-    let itemAtIndex = input[randomIndex]; 
-    
-    input[randomIndex] = input[i]; 
-    input[i] = itemAtIndex;
-  }
-  return input;
-}
 
    
   // For each dataObject, create a new card and append it to the DOM
